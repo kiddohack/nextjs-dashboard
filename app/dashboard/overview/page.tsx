@@ -3,10 +3,10 @@ import {
   fetchCardData,
   fetchLatestInvoices,
   fetchRevenue
-} from '../lib/data';
-import { Card } from '../ui/dashboard/cards';
-import LatestInvoices from '../ui/dashboard/latest-invoices';
-import RevenueChart from '../ui/dashboard/revenue-chart';
+} from '../../lib/data';
+import { Card } from '../../ui/dashboard/cards';
+import LatestInvoices from '../../ui/dashboard/latest-invoices';
+import RevenueChart from '../../ui/dashboard/revenue-chart';
 
 export default async function Page() {
   const revenue = await fetchRevenue();
