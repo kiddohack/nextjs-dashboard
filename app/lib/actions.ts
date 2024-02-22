@@ -73,6 +73,6 @@ export async function deleteInvoice(id: string){
             message: 'Database Error: Failed to delete Invoice'
         };
     }
-    
+
     revalidatePath('/dashboard/invoices');
 }   
